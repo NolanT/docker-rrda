@@ -3,7 +3,6 @@ FROM golang:1.17-bullseye as build
 
 
 WORKDIR /go/src/app
-ADD . /go/src/app
 
 RUN git clone --depth 1 https://github.com/fcambus/rrda /go/src/app
 
